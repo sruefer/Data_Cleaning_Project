@@ -69,6 +69,7 @@ run_Analysis <- function(init_path = "~/GitHub/Data_Cleaning_Project") {
       # Save Files
       setwd(init_path)
       write.csv(x, "x.csv")
-      write.csv(x2, "x2.csv")      
+      write.csv(x2, "x2.csv")
       
+      write.table(x2, file = "x2.txt", row.names = FALSE)
 }
