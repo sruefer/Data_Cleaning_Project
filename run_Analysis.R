@@ -63,7 +63,7 @@ run_Analysis <- function(init_path = "~/GitHub/Data_Cleaning_Project") {
       x <- tbl_df(x)
       x2 <- x %>% 
             group_by(activity, subject) %>% 
-            summarise_each(funs(sum), -c(activity, subject))
+            summarise_each(funs(mean), -c(activity, subject))
 
       
       # Save Files
